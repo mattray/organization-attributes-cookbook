@@ -1,0 +1,21 @@
+{
+  "id": "attributes",
+  "ntp": {
+    "servers": [
+      "0.au.pool.ntp.org",
+      "1.au.pool.ntp.org",
+      "2.au.pool.ntp.org",
+      "3.au.pool.ntp.org"
+    ]
+  },
+  "audit": {
+    "profiles": {
+      "linux-patch-baseline": {
+        "url": "https://github.com/dev-sec/linux-patch-baseline"
+      },
+      "uptime": {
+        "url": "https://github.com/mattray/uptime-profile"
+      }
+    }
+  }
+}

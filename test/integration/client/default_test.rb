@@ -12,3 +12,12 @@ describe json('/tmp/kitchen/nodes/client-centos-7.json') do
   its(['override','audit', 'profiles', 'linux-patch-baseline', 'url']) { should eq 'https://github.com/dev-sec/linux-patch-baseline' }
   its(['override','audit', 'profiles', 'uptime', 'url']) { should eq 'https://github.com/mattray/uptime-profile' }
 end
+
+describe ntp_conf do
+  its('server') { should eq [
+    '0.au.pool.ntp.org iburst minpoll 6 maxpoll 10',
+    '1.au.pool.ntp.org iburst minpoll 6 maxpoll 10',
+    '2.au.pool.ntp.org iburst minpoll 6 maxpoll 10',
+    '3.au.pool.ntp.org iburst minpoll 6 maxpoll 10'
+  ] }
+end

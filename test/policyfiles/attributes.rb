@@ -1,4 +1,4 @@
-name 'client-attributes'
+name 'attributes'
 
 default_source :supermarket
 

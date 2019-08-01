@@ -1,4 +1,4 @@
-# InSpec test for recipe organization-attributes::chef-server
+# InSpec test for recipe organization-attributes::attributes
 
 describe directory('/tmp/kitchen/nodes') do
   it { should exist }

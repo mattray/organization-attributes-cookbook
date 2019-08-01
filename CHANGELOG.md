@@ -4,8 +4,12 @@ This file is used to list changes made in each version of the organization-attri
 
 # 0.1.0
 
-Initial release with working chef-server and client attributes recipes.
+- Initial release with working `chef-server` and `attributes` recipes.
+
+# 0.2.0
+
+- refactored `chef-server` recipe into an `organization_databag` custom resource
 
 # BACKLOG
 
-- refactor into Custom Resources
+- test with `knife` and an actual Chef Server

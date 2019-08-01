@@ -10,9 +10,6 @@
   },
   "audit": {
     "profiles": {
-      "linux-patch-baseline": {
-        "url": "https://github.com/dev-sec/linux-patch-baseline"
-      },
       "uptime": {
         "url": "https://github.com/mattray/uptime-profile"
       }

@@ -62,6 +62,16 @@ The `attributes` recipe is applied by nodes so they may access the `organization
 
 The `profiles` recipe is used by nodes using the `audit` or [audit-artifactory](https://github.com/mattray/audit-artifactory-cookbook) cookbooks so they may provide organization-wide profile versions without requiring the versions to be set with every policy that utilizes those compliance profiles.
 
+# Custom Resources
+
+## organizations_databag
+
+This resource reads the `organizations` data bag and copies the data bag item specified by the `organization` property into the local `organization` data bag. You may override the `organizations` and `local_organizations` properties if you wish, they default to `organizations` and `organization` respectively.
+
+## organizations_attributes
+
+This custom resource reads the local `organization` data bag and copies the `attributes` data bag items into override attributes on the node. You may override the `id` of the data bag item (default is `attributes`) and change the `environment` within the data bag if you have nested environments within the data bag item (the default is not to use them).
+
 # License and Authors
 
 - Author: Matt Ray [matt@chef.io](mailto:matt@chef.io)

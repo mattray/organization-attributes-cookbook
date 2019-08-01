@@ -10,6 +10,11 @@ This file is used to list changes made in each version of the organization-attri
 
 - refactored `chef-server` recipe into an `organization_databag` custom resource
 
+# 0.3.0
+
+- refactored `attributes` recipe into an `organization_attributes` custom resource
+- implement `profiles` recipe
+
 # BACKLOG
 
 - test with `knife` and an actual Chef Server

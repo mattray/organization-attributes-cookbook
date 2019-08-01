@@ -1,63 +1,40 @@
 {
-    "id": "data_center1",
-    "attributes":
-    {
-        "ntp":
-        {
-            "servers":
-            [
-                "0.au.pool.ntp.org",
-                "1.au.pool.ntp.org",
-                "2.au.pool.ntp.org",
-                "3.au.pool.ntp.org"
-            ]
-        },
-        "audit":
-        {
-            "profiles":
-            {
-                "linux-patch-baseline":
-                {
-                    "url": "https://github.com/dev-sec/linux-patch-baseline"
-                },
-                "uptime":
-                {
-                    "url": "https://github.com/mattray/uptime-profile"
-                }
-            }
-        }
+  "id": "data_center1",
+  "attributes": {
+    "ntp": {
+      "servers": [
+        "0.au.pool.ntp.org",
+        "1.au.pool.ntp.org",
+        "2.au.pool.ntp.org",
+        "3.au.pool.ntp.org"
+      ]
     },
-    "profiles":
-    {
-        "linux-patch-baseline":
-        {
-            "version": "1.2"
-        },
-        "uptime":
-        {
-            "version": "1.3"
-        },
-        "cis-rhel7-level1-server":
-        {
-            "version": "1.4"
+    "audit": {
+      "profiles": {
+        "uptime": {
+          "url": "https://github.com/mattray/uptime-profile"
         }
-
-    },
-    "nodes":
-    {
-        "node-centos-7":
-        {
-            "attributes":
-            {
-                "ntp":
-                {
-                    "servers":
-                    [
-                        "0.au.pool.ntp.org",
-                        "1.au.pool.ntp.org"
-                    ]
-                }
-            }
-        }
+      }
     }
+  },
+  "profiles": {
+    "linux-patch-baseline": {
+      "version": "0.5.0"
+    },
+    "uptime": {
+      "version": "0.2.0"
+    }
+  },
+  "nodes": {
+    "node-centos-7": {
+      "attributes": {
+        "ntp": {
+          "servers": [
+            "0.sg.pool.ntp.org",
+            "1.sg.pool.ntp.org"
+          ]
+        }
+      }
+    }
+  }
 }

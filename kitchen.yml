@@ -31,6 +31,13 @@ suites:
     verifier:
       inspec_tests:
         - test/integration/attributes
+  - name: profiles
+    data_bags_path: "test/data_bags"
+    provisioner:
+      policyfile: test/policyfiles/profiles.rb
+    verifier:
+      inspec_tests:
+        - test/integration/profiles
   # - name: node
   #   data_bags_path: "test/data_bags"
   #   provisioner:
@@ -39,10 +46,3 @@ suites:
   #     inspec_tests:
   #       - test/integration/attributes
   #       - test/integration/node
-  # - name: profiles
-  #   data_bags_path: "test/data_bags"
-  #   provisioner:
-  #     policyfile: test/policyfiles/profiles.rb
-  #   verifier:
-  #     inspec_tests:
-  #       - test/integration/profiles

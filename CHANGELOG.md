@@ -13,7 +13,7 @@ This file is used to list changes made in each version of the organization-attri
 # 0.3.0
 
 - refactored `attributes` recipe into an `organization_attributes` custom resource
-- implement `profiles` recipe
+- implement `profiles` recipe and `organization_profiles` custom resource
 
 # BACKLOG
 

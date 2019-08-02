@@ -72,6 +72,10 @@ This resource reads the `organizations` data bag and copies the data bag item sp
 
 This custom resource reads the local `organization` data bag and copies the `attributes` data bag items into override attributes on the node. You may override the `id` of the data bag item (default is `attributes`) and change the `environment` within the data bag if you have nested environments within the data bag item (the default is not to use them).
 
+## organizations_profiles
+
+This custom resource reads the local `organization` data bag `profiles` data bag item and compares it with the profiles assigned to the node['audit']['profiles']. If there are matching profiles, organization-wide settings for the profiles may be assigned to the node itself (ie. 'url' or 'version'). You may override the `id` of the data bag item (default is `attributes`) and change the `environment` within the data bag if you have nested environments within the data bag item (the default is not to use them).
+
 # License and Authors
 
 - Author: Matt Ray [matt@chef.io](mailto:matt@chef.io)
